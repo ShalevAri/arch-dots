@@ -32,6 +32,7 @@ Plug('ron-rs/ron.vim') --ron syntax highlighting
 Plug('MeanderingProgrammer/render-markdown.nvim') --render md inline
 Plug('emmanueltouzery/decisive.nvim') --view csv files
 Plug('folke/twilight.nvim') --surrounding dim
+Plug('stevearc/oil.nvim') --surrounding dim
 
 vim.call('plug#end')
 
@@ -57,6 +58,7 @@ require("plugins.render-markdown")
 -- require("plugins.treesitter")
 -- require("plugins.twilight")
 -- require("plugins.which-key")
+require("plugins.oil")
 
 vim.defer_fn(function() 
 		--defer non-essential configs,
@@ -72,3 +74,5 @@ require("plugins.which-key")
 end, 100)
 
 load_theme()
+
+require("oil").setup()
