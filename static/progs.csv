@@ -55,4 +55,5 @@
 ,wl-clipboard,"Clipboard management for Wayland"
 A,wlogout,"Logout manager"
 ,zathura,"PDF reader"
+,zbar,"An open-source software suite for reading bar codes from various sources"
 ,zoxide,"Better cd"
