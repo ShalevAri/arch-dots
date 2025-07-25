@@ -22,4 +22,4 @@ configuration {
     }
 }
 
-@theme "~/.config/rofi/themes/gruvbox/gruvbox-dark-soft.rasi"
+@import "gruvbox-dark-soft"
