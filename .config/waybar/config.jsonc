@@ -42,7 +42,7 @@
     },
 
     "cpu": {
-        "format": "cpu / {usage}%",
+        "format": "CPU / {usage}%",
         "interval": 2,
 
         "states": {
@@ -51,7 +51,7 @@
     },
 
     "memory": {
-        "format": "mem / {percentage}%",
+        "format": "RAM / {percentage}%",
         "interval": 2,
 
         "states": {
@@ -60,7 +60,7 @@
     },
 
     "network": {
-        "format-wifi" : "wifi / up",
+        "format-wifi" : "WIFI / up",
         "format-ethernet": "enth up",
         "format-disconnected" : "no network",
         "tooltip": false
@@ -69,7 +69,7 @@
     "pulseaudio": {
         "scroll-step": 5,
         "max-volume": 150,
-        "format": "vol / {volume}%",
+        "format": "VOL / {volume}%",
         "format-bluetooth": "vol {volume}%",
         "nospacing": 1,
         "on-click": "pavucontrol",
