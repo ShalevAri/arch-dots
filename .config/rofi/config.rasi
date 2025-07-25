@@ -1,0 +1,25 @@
+configuration {
+    display-drun: "Applications:";
+    display-window: "Windows:";
+    drun-display-format: "{icon} {name}";
+    font: "Liberation Mono 10";
+    modi: "window,run,drun,emoji,calc";
+    show-icons: false;
+    icon-theme: "Papirus";
+
+    // Timeout from user input.
+    timeout {
+        // The delay after inactivity to execute action.
+        delay: 0;
+        // The action to execute once the delay expires.
+        action: "kb-cancel";
+    }
+
+    // File browser mode.
+    filebrowser {
+        sorting-method:    "name";
+        directories-first: true;
+    }
+}
+
+@theme "~/.config/rofi/themes/gruvbox/gruvbox-dark-soft.rasi"
