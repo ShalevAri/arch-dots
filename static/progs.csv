@@ -52,6 +52,7 @@
 ,veracrypt,"Encryption"
 ,waybar,"Statusbar"
 ,wikiman,"Local wikis"
+,wl-clipboard,"Clipboard management for Wayland"
 A,wlogout,"Logout manager"
 ,zathura,"PDF reader"
 ,zoxide,"Better cd"
