@@ -9,20 +9,20 @@
     "margin-left": 0,
 
     "modules-left": [
-        "hyprland/workspaces"
+        "hyprland/workspaces",
     ],
 
     "modules-center": [
-        "clock"
+        "hyprland/window",
     ],
 
     "modules-right": [
-        "tray",
         "cpu_text",
         "cpu",
         "memory",
         "network",
-        "pulseaudio"
+        "pulseaudio",
+        "clock",
     ],
 
     "hyprland/workspaces": {
@@ -37,7 +37,7 @@
     },
 
     "clock": {
-        "format": "{:%a %d, %I:%M %p}",
+        "format": "{:%b / %d  %I:%M / %p}",
         "tooltip": false
     },
 
@@ -60,9 +60,9 @@
     },
 
     "network": {
-        "format-wifi" : "WIFI / up",
-        "format-ethernet": "enth up",
-        "format-disconnected" : "no network",
+        "format-wifi" : "WIFI / UP",
+        "format-ethernet": "ENTH UP",
+        "format-disconnected" : "NETWORK OFFLINE",
         "tooltip": false
     },
 
