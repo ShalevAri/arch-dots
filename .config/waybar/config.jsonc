@@ -10,10 +10,7 @@
 
     "modules-left": [
         "hyprland/workspaces",
-    ],
-
-    "modules-center": [
-        "hyprland/window",
+		"custom/weather",
     ],
 
     "modules-right": [
@@ -31,10 +28,12 @@
         "tooltip": false
     },
 
-    "tray": {
-        "spacing": 10,
-        "tooltip": false
-    },
+	"custom/weather": {
+		"exec": "sh ~/.dotfiles/.local/bin/wttr.sh",
+		"interval": 3600,
+		"format": "{}",
+		"tooltip": true
+	},
 
     "clock": {
         "format": "{:%b / %d  %I:%M / %p}",
@@ -49,6 +48,13 @@
             "critical": 90
         }
     },
+
+    "tray": {
+        "spacing": 10,
+        "tooltip": false
+    },
+
+
 
     "memory": {
         "format": "RAM / {percentage}%",
@@ -72,7 +78,6 @@
         "format": "VOL / {volume}%",
         "format-bluetooth": "vol {volume}%",
         "nospacing": 1,
-        "on-click": "pavucontrol",
         "tooltip": false
     }
 }
