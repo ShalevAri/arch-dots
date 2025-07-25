@@ -6,8 +6,8 @@ set TERM xterm-256color
 
 # set -x EDITOR "emacsclient -t -a ''"
 # set -x VISUAL "emacsclient -c -a emacs"
-set -x EDITOR nvim
-set -x VISUAL nvim
+set -x EDITOR helix
+set -x VISUAL helix
 
 set -x MANPAGER "nvim +Man!"
 
