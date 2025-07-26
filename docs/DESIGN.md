@@ -10,6 +10,8 @@ My Dotfiles are designed to allow you to work without distraction.
 
 - **Keyboard/vim-centrality** — All terminal programs (and other programs) use vim keys when possible.
 
+- **Rust/C** — Important tools should be written in either Rust or C. More information can be found in the [Tools Document](docs/TOOLS.md)
+
 ## Animations
 
 There are no animations or distracting eye-candy, everything happens instantly.
