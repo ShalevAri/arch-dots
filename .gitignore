@@ -1,3 +1,4 @@
 .DS_Store
 .config/fish/fish_variables
 .local/bin/wttr.sh
+.config/newsboat/urls
