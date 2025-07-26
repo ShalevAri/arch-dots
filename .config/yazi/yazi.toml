@@ -1,0 +1,26 @@
+# ~/.config/yazi/yazi.toml
+[manager]
+linemode = "size_and_mtime"
+
+[plugin]
+prepend_preloaders = [
+    # Replace magick, image, video with mediainfo
+    { mime = "{audio,video,image}/*", run = "mediainfo" },
+    { mime = "application/subrip", run = "mediainfo" },
+]
+prepend_previewers = [
+    # Replace magick, image, video with mediainfo
+    { mime = "{audio,video,image}/*", run = "mediainfo"},
+    { mime = "application/subrip", run = "mediainfo" },
+
+    { name = "*.md", run = "glow" },
+]
+
+[opener]
+edit = [
+  { run = 'helix "$@"', block = true },
+]
+
+play = [
+  { run = 'mpv "$@"', orphan = true, for = "unix"},
+]
