@@ -35,6 +35,8 @@ alias pn pnpm
 alias sdn "shutdown -h now"
 alias e "$EDITOR"
 alias v "$EDITOR"
+alias clearcp "wl-copy --clear"
+alias clcp "wl-copy --clear"
 
 # bm-dirs
 alias dot "cd $HOME/.dotfiles"
