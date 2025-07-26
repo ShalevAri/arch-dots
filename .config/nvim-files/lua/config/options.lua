@@ -1,51 +1,48 @@
-vim.g.mapleader = " "
-vim.opt.guicursor = ""
+local options = {
+	laststatus = 3,
+	ruler = false, --disable extra numbering
+	showmode = false, --not needed due to lualine
+	showcmd = false,
+	wrap = true, --toggle bound to leader W
+	mouse = "a", --enable mouse
+	clipboard = "unnamedplus", --system clipboard integration
+	history = 100, --command line history
+	swapfile = false, --swap just gets in the way, usually
+	backup = false,
+	undofile = true, --undos are saved to file
+	cursorline = true, --highlight line
+	ttyfast = true, --faster scrolling
+	smoothscroll = true,
+	title = true, --automatic window titlebar
+	
+	number = true, --numbering lines
+	relativenumber = true, --toggle bound to leader nn
+	numberwidth = 4,
 
--- For nvim-tree
-vim.opt.termguicolors = true
+	smarttab = true, --indentation stuff
+	cindent = true,
+	autoindent = false,
+	tabstop = 4, --visual width of tab
 
-vim.opt.encoding = "utf-8"
-vim.opt.fileencoding = "utf-8"
+	foldmethod = "expr",
+	foldlevel = 99, --disable folding, lower #s enable
+	foldexpr = "nvim_treesitter#foldexpr()",
+	
+	termguicolors = true,
 
-vim.opt.number = true
+	ignorecase = true, --ignore case while searching
+	smartcase = true, --but do not ignore if caps are used
 
-vim.opt.title = true
-vim.opt.autoindent = true
-vim.opt.smartindent = true
-vim.opt.hlsearch = true
-vim.opt.backup = false
-vim.opt.showcmd = true
-vim.opt.cmdheight = 1
-vim.opt.laststatus = 3
-vim.opt.expandtab = true
-vim.opt.scrolloff = 10
-vim.opt.shell = "fish"
-vim.opt.backupskip = { "/tmp/*", "/private/tmp/*" }
-vim.opt.inccommand = "split"
-vim.opt.ignorecase = true -- Case insensitive searching UNLESS /C or capital in search
-vim.opt.smarttab = true
-vim.opt.breakindent = true
-vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
-vim.opt.wrap = false -- No Wrap lines
-vim.opt.backspace = { "start", "eol", "indent" }
-vim.opt.path:append({ "**" }) -- Finding files - Search down into subfolders
-vim.opt.wildignore:append({ "*/node_modules/*" })
-vim.opt.splitbelow = true -- Put new windows below current
-vim.opt.splitright = true -- Put new windows right of current
-vim.opt.splitkeep = "cursor"
-vim.opt.mouse = ""
+	conceallevel = 2, --markdown conceal
+	concealcursor = "nc",
 
--- Undercurl
-vim.cmd([[let &t_Cs = "\e[4:3m"]])
-vim.cmd([[let &t_Ce = "\e[4:0m"]])
+	splitkeep = 'screen', --stablizie window open/close
+}
 
--- Add asterisks in block comments
-vim.opt.formatoptions:append({ "r" })
-
-vim.cmd([[au BufNewFile,BufRead *.astro setf astro]])
-vim.cmd([[au BufNewFile,BufRead Podfile setf ruby]])
-
-if vim.fn.has("nvim-0.8") == 1 then
-  vim.opt.cmdheight = 0
+for k, v in pairs(options) do
+	vim.opt[k] = v
 end
+
+vim.diagnostic.config({
+	signs = false,
+})
