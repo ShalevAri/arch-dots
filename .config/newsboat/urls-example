@@ -1,5 +1,14 @@
 ### EXAMPLE URLS DOCUMENT ###
 # Rename this file to `urls` and add your own feeds
 
-# (Arch Linux)
+# (Artix Linux news)
+https://artixlinux.org/feed.php
+
+# (Parabola GNU/Linux-libre: Recent news updates)
+https://www.parabola.nu/feeds/
+
+# (Arch Linux: Recent news updates)
 https://archlinux.org/feeds/news/
+
+# (Planet Arch Linux)
+https://archlinux.org/feeds/planet/
