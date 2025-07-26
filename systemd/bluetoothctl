@@ -1,0 +1,14 @@
+# `cp` this file to `/etc/systemd/system/bluetoothctl.service`
+# MAKE SURE TO CHANGE THE USER BEFORE COPYING
+
+[Unit]
+Description=Bluetooth Monitor Service
+After=network.target bluetooth.service
+
+[Service]
+ExecStart=/home/shalev/.dotfiles/.local/bin/bluetoothctl.sh
+Restart=on-failure
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target

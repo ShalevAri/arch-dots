@@ -25,4 +25,5 @@ walls
 scripts
 docs
 static
+systemd
 setup.sh
