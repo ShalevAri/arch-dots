@@ -1,10 +1,5 @@
 ### SHELL.FISH ###
 
-# Other parts of my Dotfiles rely on these commands to "not have" sudo, so removing this may have unintended consequences
-for command in mount umount sv pacman updatedb su shutdown poweroff reboot
-    alias $command="sudo $command"
-end
-
 # Verbosity and settings that you pretty much always want
 alias cp "cp -iv"
 alias mv "mv -iv"
