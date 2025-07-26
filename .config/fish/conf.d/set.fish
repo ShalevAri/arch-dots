@@ -6,10 +6,10 @@ set TERM xterm-256color
 
 # set -x EDITOR "emacsclient -t -a ''"
 # set -x VISUAL "emacsclient -c -a emacs"
-set -x EDITOR nvim
-set -x VISUAL nvim
+set -x EDITOR helix
+set -x VISUAL helix
 
-set -x MANPAGER "nvim +Man!"
+set -x MANPAGER "helix +Man!"
 
 function fish_user_key_bindings
     fish_vi_key_bindings
